@@ -28,5 +28,7 @@ namespace Company_admin_system.Models
         public string phone { get; set; }
 
         public DateTime createdAt { get; set; } = DateTime.Now;
+
+        public virtual Department Department { get; set; }
     }
 }
