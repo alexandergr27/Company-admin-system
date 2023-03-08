@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Employee>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class"container">
+    <table class="table table-bordered table-striped" style="width:100%">
+        <thead>
+        <tr>
+            <th>
+                Employee ID
+            </th>
+            <th>
+                Employee Name
+            </th>
+            <th>
+                Employee Phone
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var obj in Model)
+        {
+            <tr>
+                <td width="30%">
+                    @obj.Id
+                </td>
+                <td width="30%">
+                    @obj.name
+                </td>
+                <td width="30%">
+                    @obj.Email
+                </td>
+            </tr>
+        }
+    </tbody>
+    </table>
+</div>
